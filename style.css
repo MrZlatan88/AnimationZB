@@ -1,0 +1,78 @@
+@keyframes animate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+  @keyframes pulse2 {
+    0% {
+      background-color: #050210;
+    }
+    50% {
+      background-color: rgba(64, 64, 65, 0.5);
+    }
+    100% {
+      background-color: #050210;
+    }
+  }
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #050210;
+    transform: translate(-50%, -50%);
+}
+.prvi {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(#fb5dad,#55fb9f, #b97aff );
+    border-radius: 50%;
+    filter: blur(50px);
+    animation: animate 1s linear infinite;
+    
+    
+}
+.drugi {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(#fb5dad,#55fb9f, #b97aff );
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+.treci {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #050210;
+    border-radius: 50%;
+   
+}
+.cetvrti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: #050210;
+    border-radius: 50%;
+    animation: pulse2 2s ease-out;
+    animation-iteration-count: infinite;
+  }
